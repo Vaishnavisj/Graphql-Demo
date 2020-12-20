@@ -1,0 +1,13 @@
+schema {
+ query: Query
+}
+
+type Query {
+ allDepartments: [Department]
+ Department(departmentId: String): Department
+}
+
+type Department {
+  departmentId: String
+  name: String
+}
